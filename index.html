@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Training</title>
+    <style>
+      div:nth-child(2) {
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 28px;
+        letter-spacing: -0.05em;
+        color: #2f75dd;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div
+        style="
+          color: #000;
+          font-size: 45px;
+          text-align: center;
+          margin-bottom: 17px;
+        "
+        class="heading"
+      >
+        Menu
+      </div>
+      <div class="desc">Mời bạn lựa chọn để thực hiện phép tính</div>
+      <div class="navigate">
+        <a href="#!" class="btn">Cộng</a>
+        <a href="#!" class="btn">Nhân</a>
+        <a href="#!" class="btn">Trừ</a>
+        <a href="#!" class="btn">Chia</a>
+      </div>
+    </div>
+    <script src="./assets/js/js.js"></script>
+    <script>
+      /*
+        let, const, var(it dung)
+        */
+      let button = document.querySelectorAll(".navigate *");
+      console.log(button);
+      setTimeout(() => {
+        button[0].setAttribute("href", "./plus.html");
+        button[0].classList.add("btn-primary");
+      }, 2000);
+
+      function add(a, b) {
+        return a + b;
+      }
+
+      let sum = add(10, 11);
+      console.log(sum);
+    </script>
+  </body>
+</html>
